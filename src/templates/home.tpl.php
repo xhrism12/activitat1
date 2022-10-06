@@ -7,7 +7,7 @@
         <h1><?=$title;?></h1>
         <hr>
     </header>
-    <?php include 'partials/nav.php'?>
+    <?php include 'partials/nav.tpl.php'?>
     <main>
         <?php
             foreach ($alumnes as $alumne):?>
