@@ -22,16 +22,21 @@
     <div class="signupFrm">
         
         <br>
-        <form class="form" action="" method="POST">
+        <form class="form" action="?url=regaction" method="POST">
             <h2 class="title">Formulari</h2>
             <div class="inputContainer">
-                <input class="input" type="text" name="nom" placeholder="nom">
+                <input class="input" type="text" name="username" placeholder="username">
                 <label for="" class="label">User</label>
             </div>
             
             <div class="inputContainer">
-                <input class="input" type="text" name="cognoms" placeholder="cognoms">
+                <input class="input" type="password" name="password" placeholder="password">
                 <label for="" class="label">Password</label> 
+            </div>
+
+            <div class="inputContainer">
+                <input class="input" type="email" name="email" placeholder="email">
+                <label for="" class="label">Email</label> 
             </div>
             <button class="submitBtn" type="submit">Registrar</button>
         </form>

@@ -5,7 +5,7 @@ $routes=[
     'register',
     'logout',
     'logaction',
-    'registeraction',
+    'regaction',
     'dashboard',
     'error'
 ];
