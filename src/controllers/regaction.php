@@ -10,8 +10,8 @@ if( !empty($_POST['username'])&&!empty($_POST['email'])&&!empty($_POST['password
 
     $db=connectMysql($dsn, $dbuser, $dbpass);
     $passwordCrypt = password_hash($password,PASSWORD_DEFAULT);
-    $stmt=$db->prepare("INSERT INTO users(username,email,password) VALUES(?,?,?)");
     $res=$stmt->execute(array($username, $email, $passwordCrypt));
+    $stmt=$db->prepare("INSERT INTO users(username,email,password) VALUES(?,?,?)");
 
     if ($res){
         $_SESSION['user']['username']=$username;

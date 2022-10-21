@@ -5,5 +5,6 @@
 ?>
 <body>
     Dashboard
+    <p>Bienvenido, <?= $_SESSION['user']->username; ?></p>
 </body>
 </html>
